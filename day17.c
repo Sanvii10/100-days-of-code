@@ -12,7 +12,49 @@ Input 2:
 Output 2:
 Not Armstrong
 
-*/
+
+
+#include <stdio.h>
+
+int main() {
+    int n, original, temp, digit, sum = 0, digits = 0, power, i;
+    
+    scanf("%d", &n);
+    original = n;
+    temp = n;
+    
+    while (temp > 0) {
+        digits = digits + 1;
+        temp = temp / 10;
+    }
+    
+    temp = n;
+    
+
+    while (temp > 0) {
+        digit = temp % 10;
+        
+       
+        power = 1;
+        for (i = 0; i < digits; i++)
+            power = power * digit;
+        
+        sum = sum + power;
+        temp = temp / 10;
+    }
+    
+   
+    if (original == sum)
+        printf("Armstrong\n");
+    else
+        printf("Not Armstrong\n");
+    
+    return 0;
+}
+    */
+
+
+
 /*Q34: Write a program to check if a number is prime.
 
 
@@ -62,21 +104,3 @@ int main()
 
 
 
-#include <stdio.h>
-
-int main() {
-    int n, i;
-    int arr[i];
-    scanf("%d", &n);
-
-    int *arr;
-
-    arr = (int *)malloc(n*sizeof(int));
-
-    for (int i=0; i<n; i++){
-        scanf("%d", &arr[i]);
-    }
-    
-
-    return 0;
-}
