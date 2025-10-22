@@ -11,6 +11,9 @@ Input 2:
 12
 Output 2:
 December, 31 days
+
+
+
 #include <stdio.h>
 
 int main()
@@ -94,20 +97,49 @@ int main()
     */
 
 
-   #include<stdio.h>
-union address{
-    char name[100];
-    char home_address[100];
-    char hostel_address[100];
-    char city[100];
-    char state[100];
-    char zip[100];
+/*Q22: Write a program to find profit or loss percentage given cost price and selling price.
+
+
+Sample Test Cases:
+Input 1:
+1000 1200
+Output 1:
+Profit 20%
+
+Input 2:
+1000 800
+Output 2:
+Loss 20%
+
+Input 3:
+1000 1000
+Output 3:
+No Profit No Loss
+
+
+
+#include <stdio.h>
+
+int main() {
+    float cp, sp, percentage;
     
-};
-int main(){
-    union address addrss;
-    printf("enter the present address");
-    //scanf("%s",addrss.home_address);
-    fgets(addrss.home_address,100,stdin);
-    printf("present address %s",addrss.home_address);
-} 
+    scanf("%f %f", &cp, &sp);
+    
+    if (sp > cp) {
+        
+        percentage = ((sp - cp) / cp) * 100;
+        printf("Profit %.0f%%\n", percentage);
+    }
+    else if (sp < cp) {
+        
+        percentage = ((cp - sp) / cp) * 100;
+        printf("Loss %.0f%%\n", percentage);
+    }
+    else {
+        
+        printf("No Profit No Loss\n");
+    }
+    
+    return 0;
+}
+    */
