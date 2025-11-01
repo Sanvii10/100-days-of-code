@@ -62,3 +62,21 @@ int main()
 
 
 
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    int arr[i];
+    scanf("%d", &n);
+
+    int *arr;
+
+    arr = (int *)malloc(n*sizeof(int));
+
+    for (int i=0; i<n; i++){
+        scanf("%d", &arr[i]);
+    }
+    
+
+    return 0;
+}
