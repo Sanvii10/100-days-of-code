@@ -92,3 +92,22 @@ int main()
     return 0;
 }
     */
+
+
+   #include<stdio.h>
+union address{
+    char name[100];
+    char home_address[100];
+    char hostel_address[100];
+    char city[100];
+    char state[100];
+    char zip[100];
+    
+};
+int main(){
+    union address addrss;
+    printf("enter the present address");
+    //scanf("%s",addrss.home_address);
+    fgets(addrss.home_address,100,stdin);
+    printf("present address %s",addrss.home_address);
+} 
