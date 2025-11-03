@@ -16,20 +16,30 @@ Output 2:
 #include <stdio.h>
 
 int main() {
-    int n,i,j;
-
-    printf("Enter the no. upto which you want a prime number = ");
+    int n, i, j, prime;
+    
     scanf("%d", &n);
-
-    if (n == 1){
-        printf("The given number is a wrong input.\n");
+    
+    for (i = 2; i <= n; i++) {
+        prime = 1;
+        
+        for (j = 2; j < i; j++) {
+            if (i % j == 0) {
+                prime = 0;
+                break;
+            }
+        }
+        
+        
+        if (prime)
+            printf("%d ", i);
     }
-
-
+    printf("\n");
+    
     return 0;
 }
-
 */
+
 
 
 /*Q56: Read and print elements of a one-dimensional array.
