@@ -15,6 +15,9 @@ Output 1:
 345
 2345
 12345
+
+
+
 #include <stdio.h>
 
 int main() {
@@ -53,11 +56,26 @@ Input 2:
 Output 2:
 Note: Spaces indicate indentation.
 
-*/
 
 #include <stdio.h>
 
 int main() {
+    int n = 5, i, j;
+    
+    // Print pattern
+    for (i = 0; i < n; i++) {
+        // Print leading spaces
+        for (j = 0; j < i; j++)
+            printf(" ");
+        
+        // Print stars
+        for (j = 0; j < n - i; j++)
+            printf("*");
+        
+        printf("\n");
+    }
     
     return 0;
 }
+
+*/
