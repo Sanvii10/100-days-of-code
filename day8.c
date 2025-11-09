@@ -21,9 +21,6 @@ Input 4:
 #
 Output 4:
 Special character
-
-
-
 #include <stdio.h>
 
 int main() {
