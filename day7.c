@@ -16,8 +16,6 @@ Input 3:
 2000
 Output 3:
 Leap year
-
-
 #include <stdio.h>
 
 int main()
