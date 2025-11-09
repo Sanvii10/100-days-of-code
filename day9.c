@@ -17,8 +17,6 @@ Input 3:
 Output 3:
 Roots are complex
 
-
-
 #include <stdio.h>
 #include <math.h>
 
