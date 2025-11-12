@@ -11,9 +11,6 @@ Input 2:
 5000 7 3
 Output 2:
 Simple Interest=1050, Compound Interest=1125.76
-
-
-
 #include <stdio.h>
 
 int main()

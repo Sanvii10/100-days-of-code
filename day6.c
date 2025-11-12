@@ -11,9 +11,6 @@ Input 2:
 12
 Output 2:
 12 is even
-
-
-
 #include <stdio.h>
 
 int main()
