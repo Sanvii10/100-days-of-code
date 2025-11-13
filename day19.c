@@ -1,6 +1,4 @@
 /*Q37: Write a program to find the LCM of two numbers.
-
-
 Sample Test Cases:
 Input 1:
 4 5

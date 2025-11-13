@@ -13,9 +13,6 @@ Output 2:
 Not Armstrong
 
 */
-
-
-
 /*Q34: Write a program to check if a number is prime.
 
 

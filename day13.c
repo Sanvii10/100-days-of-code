@@ -16,9 +16,6 @@ Input 3:
 15 5 /
 Output 3:
 3
-
-
-
 #include <stdio.h>
 
 int main()
